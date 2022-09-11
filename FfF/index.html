@@ -1,0 +1,200 @@
+<!doctype html>
+<html>
+
+<head>
+  <link rel="stylesheet" type="text/css" href="css/lawrence.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FinanceForeFront</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+</head>
+
+<body>
+  <div class="row">
+    <div class="col-2 logo"><img src="img/FfF logo.png" alt="order"></div>
+    <div class="col-8 menu"><a href="#anchorfinancial">Financial Literacy</a> <a href="#anchorsavings">Savings</a> <a
+        href="#">Investments</a></div>
+  </div>
+  <div class="row">
+    <div class="top-left">At FinanceForeFront we want to take your finances to the next level.</div>
+    <div class="slideshow" style="width:1670px">
+      <img class="mySlides" src="img/Background1.jpg" style="width:100%">
+      <img class="mySlides" src="img/Background2.webp" style="width:100%">
+      <img class="mySlides" src="img/Background3.jpg" style="width:100%">
+    </div>
+
+    <script>
+      var myIndex = 0;
+      carousel();
+
+      function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        myIndex++;
+        if (myIndex > x.length) { myIndex = 1 }
+        x[myIndex - 1].style.display = "block";
+        setTimeout(carousel, 5000); // Change image every 2 seconds
+      }
+    </script>
+  </div>
+  </div>
+  <div class="row awe">
+    <div class="col-4 sample"><img src="img/reading.webp" alt="someone reading">
+      <br>
+      <a class="#" href="#anchorfinancial">Financial Literacy</a>
+      <p>Financial literacy is the ability to understand and make use of a variety of financial skills. Such as banking,
+        budgeting, handling debt and credit, and investing.</p>
+    </div>
+    <div class="col-4 sample"><img src="img/money.webp" alt="money saved">
+      <br>
+      <a class="#" href="#anchorsavings">Savings</a>
+      <p>Savings is income not spent. Savings isn't just putting money into an account, but it's also reducing
+        expenditures.</p>
+    </div>
+    <div class="col-4 sample"><img src="img/investing.webp" alt="investment going up">
+      <br>
+      <a class="#" href="#">Investments</a>
+      <p>The best time to invest was when you turned 18, the second best time to invest is now! Some different
+        investment opportunities include stocks, tangible assets, bonds, and cash.</p>
+    </div>
+  </div>
+
+  <div class="row litbg">
+    <div class="top anchorsavings" id="anchorfinancial">Financial Literacy</div>
+    <div class="literacyinfo">
+
+      <div class="card col-4">
+        <div class="img"> <span></span><span></span><span></span><span></span></div>
+        <div class="content">
+          <p><b>Get Educated!</b></p>
+          <p>The Simple path to Wealth by J.L Collins is a great start!</p>
+          <p><b>Budget!</b></p>
+          <p>The more you save the faster you retire!</p>
+          <p><b>Handle Debt!</b></p>
+          <p>Pay off any loans and start using CC's to build a report!</p>
+        </div>
+      </div>
+    </div>
+    <div class="literacyinfo">
+      <div class="card col-4">
+        <div class="img"> <span></span><span></span><span></span><span></span></div>
+        <div class="content">
+          <p><b>Network!</b></p>
+          <p>Your Network is your Networth!</p>
+          <p><b>Start ASAP!</b></p>
+          <p>Time in the market will always beat timing the Market!</p>
+          <p><b>Keep Learning!</b></p>
+          <p>When times are changing it's always good to staying up to date!</p>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="top2" id="anchorsavings">Savings</div>
+    <div class="wrapper">
+      <div class="col-4 investcalculator">
+        <h2 class="rcalc">Retirement Calculator</h2>
+        <label for="income">Income ($)</label><br>
+        <input type="text" id="income" name="income" value="100000"><br><br>
+
+        <label for="savings">Savings (%)</label><br>
+        <input type="text" id="savings" name="savings" value="50"><br><br>
+
+        <label for="expenses">Expenses ($)</label><br>
+        <input type="text" id="expenses" name="expenses" value="50000"><br><br>
+
+        <label for="roi">Return on Investment (%)</label>
+        <input type="text" id="roi" name="roi" value="5"><br><br>
+
+        <label for="withdrawal">Withdrawal Rate (%)</label>
+        <input type="text" id="withdrawal" name="withdrawal" value="4"><br><br>
+
+        <input type="submit" onclick="calculateYears()">
+      </div>
+      <div class="col-4 summary">
+        <h2>You can retire in <bold id="test"></bold> years </h2>
+
+      </div>
+      <div class="col-4 infocalc">
+        <h3>How Does It work?</h3>
+        <p>This calculator's purpose is to find how long it would take for someone to retire based on their salary,
+          savings/expenses, and the usual 5% and 4% Withdrawal Rate.
+        <p>First is to find out how much you would need to retire we can find this out by the 4% Rule, or multipling
+          your expenses by 25. Then we can exponentially compound the savings by the rate of return until you reach that
+          4% rule. Then you're retired!</p>
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="footer-basic">
+    <footer>
+      <div class="social"><a href="https://www.linkedin.com/in/danny-lawrence-28898124a/"><i
+            class="icon ion-social-instagram"></i></a><a href="https://www.linkedin.com/in/danny-lawrence-28898124a/"><i
+            class="icon ion-social-snapchat"></i></a><a href="https://www.linkedin.com/in/danny-lawrence-28898124a/"><i
+            class="icon ion-social-twitter"></i></a><a href="https://www.linkedin.com/in/danny-lawrence-28898124a/"><i
+            class="icon ion-social-facebook"></i></a></div>
+      <ul class="list-inline">
+        <li class="list-inline-item"><a href="https://www.linkedin.com/in/danny-lawrence-28898124a/">Home</a></li>
+        <li class="list-inline-item"><a href="https://www.linkedin.com/in/danny-lawrence-28898124a/">Services</a></li>
+        <li class="list-inline-item"><a href="https://www.linkedin.com/in/danny-lawrence-28898124a/">About</a></li>
+        <li class="list-inline-item"><a href="https://www.linkedin.com/in/danny-lawrence-28898124a/">Terms</a></li>
+        <li class="list-inline-item"><a href="https://www.linkedin.com/in/danny-lawrence-28898124a/">Privacy Policy</a>
+        </li>
+      </ul>
+      <p class="copyright">FinanceForeFront © 2022</p>
+    </footer>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+
+
+    function calculateYears() {
+      var yearlySalary = parseInt(document.getElementById('income').value);
+      var userSavingsInp = parseInt(document.getElementById('savings').value);  //Savings rate inputted by user percentage
+      var savingsRate = userSavingsInp * .01; //Savings rate is then calculated as a percentage
+      var userRoiInp = parseInt(document.getElementById('roi').value);  //ROI inputted by user
+      var roi = userRoiInp * .01;  //ROI also then calculated as a percentage
+      var retirement = 25;  //This is the multiply by 25 rule
+      var savingsVal = yearlySalary * savingsRate;
+      var expensesVal = yearlySalary - savingsVal;
+      var retirementVal = expensesVal * retirement;
+      var retirementBool = 1;
+      var yearsCounter = 0;
+      var constRoi = roi;  //Also calculated as a percentage
+      var constSavingsVal = savingsVal;
+      var constRetirementVal = retirementVal;
+
+
+
+      console.log("Yearly is " + yearlySalary)
+      console.log("Savings rate is " + savingsRate)
+      console.log("Roi is " + roi)
+      console.log("Savings value is " + savingsVal)
+      console.log("Retirement value is " + constRetirementVal)
+
+      while (retirementBool === 1) {
+        constSavingsVal = constSavingsVal * (1 + constRoi);
+        constSavingsVal = constSavingsVal + savingsVal; //contSavingsVal = yearlySalary * savingsRate or income * savings rate
+        yearsCounter = yearsCounter + 1;
+        console.log("Savings: " + constSavingsVal + " vs " + constRetirementVal + " Year " + yearsCounter)
+        if (constSavingsVal >= constRetirementVal) {
+          retirementBool = 0;
+        }
+      }
+
+      years = yearsCounter;
+      message = years;
+      document.getElementById("test").innerHTML = message;
+    }
+
+
+  </script>
+</body>
+
+</html>
